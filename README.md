@@ -6,6 +6,12 @@ SeeDAO 节点 (Nodes) SBT 的相关信息，包含图像与 Meta json。
 
 因为节点合约在开通新一季节点资格时，需要提供新一季节点的图像与相关信息，所以我们将这些信息放在 IPFS 上，以便于节点合约可以直接从 IPFS 上读取，进而让 Opensea 之类的可以解析出节点 SBT 相关信息。
 
+## 开启节点图档
+
+1. 如果你打不开 .ai 图档，可以下载 [Inscape](https://inkscape.org/)，Windows/Linux/Mac 都可以安装。
+2. 开启时请选择使用 `Poppler/Cairo import`，其他都不要动，就能顺利打开。
+3. 每个字都是一个方块，旋转字的方块透过 `Alt+[/]` 旋转。
+4. 输出请选 `Export PNG`，会自动去背不用担心。
 ## 节点共识大会前的处理 SOP
 
 1. 打开 `NodeSBT图.ai` 文件，将数字更改为下一季度的中文数字。
@@ -13,7 +19,7 @@ SeeDAO 节点 (Nodes) SBT 的相关信息，包含图像与 Meta json。
 3. 请务必确认 IPFS 的图打的开，例如 [https://ipfs.io/ipfs/QmZ7EHXdLZfdiHbP5PDpyyXGmJUTd7o2hHuDNMpJU5Mp26](https://ipfs.io/ipfs/QmZ7EHXdLZfdiHbP5PDpyyXGmJUTd7o2hHuDNMpJU5Mp26)
 3. 取得 IPFS 的链接，在　`meta/` 中创建新的 json，以 `000000000000000000000000000000000000000000000000000000000000000X.json` 命名，其中 X 为数字，请保持档名为 64 位数字，不到就补 0。
 4. 随意挑一个 meta 中的 json 复制内容，并修改相应的文字：
-```json
+```js
 {
     "name": "SeeDAO Season1 Node", // <-------------1 改成 N
     "description": "SeeDAO 第一季节点身份证明", // <-------------一 改成 某某
@@ -34,7 +40,7 @@ SeeDAO 节点 (Nodes) SBT 的相关信息，包含图像与 Meta json。
 
 每一个 josn 的格式都大抵如下：
 
-```
+```js
 {
     "name": "SeeDAO Season1 Node",
     "description": "SeeDAO 第一季节点身份证明",
