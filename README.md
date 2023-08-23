@@ -8,7 +8,7 @@ SeeDAO 节点 (Nodes) SBT 的相关信息，包含图像与 Meta json。
 
 ## 开启节点图档
 
-1. 如果你打不开 .ai 图档，可以下载 [Inscape](https://inkscape.org/)，Windows/Linux/Mac 都可以安装。
+1. 如果你打不开 .ai 图档，可以下载 [Inkscape](https://inkscape.org/release/inkscape-1.3/)，Windows/Linux/Mac 都可以安装。
 2. 开启时请选择使用 `Poppler/Cairo import`，其他都不要动，就能顺利打开。
 3. 每个字都是一个方块，旋转字的方块透过 `Alt+[/]` 旋转。
 4. 输出请选 `Export PNG`，会自动去背不用担心。
